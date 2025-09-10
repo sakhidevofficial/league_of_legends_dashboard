@@ -4,9 +4,9 @@
   "description": "A Next.js application with GraphQL integration",
   "main": "index.js",
   "scripts": {
-    "dev": "next dev",
-    "build": "graphql-codegen && next build",
-    "start": "next start",
+    "dev": "node init && next dev",
+    "build": "node init && graphql-codegen && next build",
+    "start": "node init && next start",
     "inspect": "graphql-inspector audit 'src/graphql/**/*.graphql' -d",
     "codegen": "graphql-codegen --config codegen.yml",
     "codegen:watch": "graphql-codegen --config codegen.yml --watch",
